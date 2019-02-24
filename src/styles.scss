@@ -1,0 +1,38 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  background-image: url("/src/asset/images/banco-pan01.jpg");
+}
+
+header {
+  max-height: 9em;
+  overflow: hidden;
+}
+
+header .logo-header {
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 195px;
+}
+header .logo-header .logo-header-img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  html {
+    body {
+      .wrap {
+        padding: 8px;
+      }
+    }
+  }
+}

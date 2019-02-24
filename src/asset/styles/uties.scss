@@ -1,0 +1,23 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+.header {
+  max-height: 9em;
+  overflow: hidden;
+}
+
+.header .logo-header {
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 195px;
+}
+.header .logo-header .logo-header-img{
+  width: 100%;
+}
+

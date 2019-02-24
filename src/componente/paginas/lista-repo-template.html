@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta author="Nelson Junior" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avaliacao Pan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lista-repo.css" />
+</head>
+
+<body>
+    <header>
+        <h2>Lista de Repositório</h2>
+    </header>
+    <main>
+        <table mat-table #table [dataSource]="dataGitHub">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name</th>
+              <td mat-cell *matCellDef="let element"> {{element.description}}</td>
+            </ng-container>
+            <ng-container matColumnDef="forks">
+              <th mat-header-cell *matHeaderCellDef> Forks</th>
+              <td mat-cell *matCellDef="let element"> {{element.forks_count}}</td>
+            </ng-container>
+            <ng-container matColumnDef="stars">
+              <th mat-header-cell *matHeaderCellDef> Stars</th>
+              <td mat-cell *matCellDef="let element"> {{element.stargazers_count}}</td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="nameColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: nameColumns;"></tr>
+          </table>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
